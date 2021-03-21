@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sun Mar 21 2021 07:00:05 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Mar 21 2021 14:18:09 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6052f81e159765d8e12c4b9d" data-wf-site="60424e1d2270db32af71da2d">
 <head>
   <meta charset="utf-8">
@@ -43,6 +43,17 @@
         <nav role="navigation" class="w-nav-menu">
           <a href="../../bulgaria/start.html" class="navlink w-nav-link">Home</a>
           <a href="../../bulgaria/pricing.html" class="navlink w-nav-link">Pricing</a>
+          <div data-hover="" data-delay="0" class="w-dropdown">
+            <div class="w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>Services</div>
+            </div>
+            <nav class="w-dropdown-list">
+              <a href="#" class="w-dropdown-link">Link 1</a>
+              <a href="#" class="w-dropdown-link">Link 2</a>
+              <a href="#" class="w-dropdown-link">Link 3</a>
+            </nav>
+          </div>
           <a href="../../bulgaria/contact.html" class="button button-menu w-button">Let&#x27;s talk</a>
         </nav>
         <div class="w-nav-button">
@@ -199,11 +210,10 @@
       <div class="w-row">
         <div class="w-col w-col-6">
           <div class="pricelarge">99 <span class="pricelarge_currency">€ /month</span></div>
-          <p>The fee covers the monthly accounting/payroll service plus the Nomad Nation membership fee.</p>
+          <p class="mb-40">The fee covers the monthly accounting/payroll service plus the Nomad Nation membership fee.</p>
+          <a href="../../bulgaria/contact.html" class="button w-button">Get started</a>
         </div>
         <div class="w-col w-col-6">
-          <h4>Deposit: 1500€</h4>
-          <p>The deposit is your safety net in case your monthly revenue does not cover your basic salary + monthly fee. It&#x27;s sized so that in the worst case you can sustain yourself for 3 months. Nomad Nation will only deduct money from your deposit should your member bank account does not contain enough funds. Once the deposit is depleted you either have to top it up - or Nomad Nation has to terminate the employment contract. But we&#x27;re optimistic that your business flourishes and the deposit is not needed as a buffer. Then it will be paid back to you at the end of your membership.</p>
           <h4>Optional Blue Card Application: 750€</h4>
           <p>If you want to use the Resident membership to apply for a Blue Card to get a visa type D, then the services provided in this regard require a one time fee. This might sound expensive, but compared to the other options to acquire the visa it&#x27;s cheaper and easier and faster.</p>
         </div>
@@ -222,7 +232,11 @@
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-6 w-col-medium-6">
-          <p class="mb-40">The Resident membership is very special: Nomad Nation is helping you as a solopreneur by employing you. That might sound paradoxically, but it&#x27;s true. Only through hiring you it will be possible for you to easily apply for long term residency as a non-EU citizen. Also as an employee you&#x27;ll benefit from much reduced bureaucrativ overhead for your business.</p>
+          <p>As a Resident member you have to pay taxes and social security contributions every month depending on your salary plus the bonus you grant yourself. To help you calculate what that means in terms of &quot;money in your pocket&quot;, you can run your numbers through the calculator here.</p>
+          <ul role="list">
+            <li>Enter the monthly revenue you expect and we&#x27;ll tell you what net salary (payout) you can expect from that.</li>
+            <li>Or enter what you want to pay to yourself as a net income and we&#x27;ll show you which revenue you&#x27;d need for that.</li>
+          </ul>
         </div>
         <div class="w-col w-col-6 w-col-medium-6">
           <div class="calculator">
@@ -248,7 +262,7 @@
                     <div>Revenue</div>
                   </div>
                   <div class="calculator_resultcol">
-                    <div><span id="revenue">0.00</span></div>
+                    <div><span id="revenue">0.00€</span></div>
                   </div>
                 </div>
                 <div class="calculator_row">
@@ -256,7 +270,7 @@
                     <div>Taxes</div>
                   </div>
                   <div class="calculator_resultcol">
-                    <div><span id="totaltaxes">0.00</span></div>
+                    <div><span id="totaltaxes">0.00€</span></div>
                   </div>
                 </div>
                 <div class="calculator_row">
@@ -264,7 +278,7 @@
                     <div>Social Security</div>
                   </div>
                   <div class="calculator_resultcol">
-                    <div><span id="totalsocialsec">0.00</span></div>
+                    <div><span id="totalsocialsec">0.00€</span></div>
                   </div>
                 </div>
                 <div class="calculator_row calculator_row-separator">
@@ -272,7 +286,7 @@
                     <div>Payout</div>
                   </div>
                   <div class="calculator_resultcol">
-                    <div><span id="payout" class="calculator_payout">0.00</span></div>
+                    <div><span id="payout" class="calculator_payout">0.00€</span></div>
                   </div>
                 </div>
               </form>
@@ -319,16 +333,15 @@
           <a href="../../index.html" class="logo-footer w-nav-brand"><img src="../../images/NN-Logo-cropped.svg" loading="lazy" alt=""></a>
           <p>Nomad Nation OOD<br>30-32, Gen. E.I. Totleben Blvd., fl 2<br>1606 Sofia<br>Bulgaria</p>
         </div>
-        <div class="w-col w-col-4">
-          <h2>Follow the Conversation</h2>
-          <p><strong>Join our group on facebook and be part of Nomad Nation from the beginning.</strong><br></p>
-          <a href="https://www.facebook.com/groups/nomadnation.org" target="_blank" class="link link-largefutura">Join group →</a>
-        </div>
+        <div class="w-col w-col-4"></div>
         <div class="w-col w-col-4">
           <div class="social">
             <a href="#" class="social_icon social_icon-mail w-inline-block"></a>
             <a href="https://www.facebook.com/groups/nomadnation.org" class="social_icon social_icon-facebook w-inline-block"></a>
           </div>
+          <h2>Follow the Conversation</h2>
+          <p><strong>Join our group on facebook and be part of Nomad Nation from the beginning.</strong><br></p>
+          <a href="https://www.facebook.com/groups/nomadnation.org" target="_blank" class="link link-largefutura">Join group →</a>
         </div>
       </div>
     </div>

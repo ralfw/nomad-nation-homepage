@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sun Mar 21 2021 07:00:05 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Mar 21 2021 14:18:09 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="605608fc0e01ad02ac0f03d7" data-wf-site="60424e1d2270db32af71da2d">
 <head>
   <meta charset="utf-8">
@@ -43,6 +43,17 @@
         <nav role="navigation" class="w-nav-menu">
           <a href="../../bulgaria/start.html" class="navlink w-nav-link">Home</a>
           <a href="../../bulgaria/pricing.html" class="navlink w-nav-link">Pricing</a>
+          <div data-hover="" data-delay="0" class="w-dropdown">
+            <div class="w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>Services</div>
+            </div>
+            <nav class="w-dropdown-list">
+              <a href="#" class="w-dropdown-link">Link 1</a>
+              <a href="#" class="w-dropdown-link">Link 2</a>
+              <a href="#" class="w-dropdown-link">Link 3</a>
+            </nav>
+          </div>
           <a href="../../bulgaria/contact.html" class="button button-menu w-button">Let&#x27;s talk</a>
         </nav>
         <div class="w-nav-button">
@@ -197,7 +208,8 @@
       </div>
       <div class="w-row">
         <div class="w-col w-col-6">
-          <p>This includes the accounting services for handling 1 &quot;active civil contract&quot; per month plus the membership fee. Nomad Nation calls that a <em>transaction</em> and encompasses tax declaration and social security handling. An &quot;active civil contract&quot; is one you wrote up to 3 invoices for in that month. The monthly fee thus does not dependent on the number of clients you have (aka civil contracts). It&#x27;s just limited to billing one of those clients in a given month. Remember: Should you do B2C business, then all invoices do different consumer clients are part of the same transaction and count towards the invoice limit.</p>
+          <p class="mb-40">This includes the accounting services for handling 1 &quot;active civil contract&quot; per month plus the membership fee. Nomad Nation calls that a <em>transaction</em> and encompasses tax declaration and social security handling. An &quot;active civil contract&quot; is one you wrote up to 3 invoices for in that month. The monthly fee thus does not dependent on the number of clients you have (aka civil contracts). It&#x27;s just limited to billing one of those clients in a given month. Remember: Should you do B2C business, then all invoices do different consumer clients are part of the same transaction and count towards the invoice limit.</p>
+          <a href="../../bulgaria/contact.html" class="button w-button">Get started</a>
         </div>
         <div class="w-col w-col-6">
           <h4 class="mt-0">Additional transactions: 35€/transaction</h4>
@@ -207,7 +219,7 @@
       </div>
     </div>
   </div>
-  <div class="section-dues hide">
+  <div class="section-dues">
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-6">
@@ -219,7 +231,11 @@
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-6 w-col-medium-6">
-          <p class="mb-40">The Resident membership is very special: Nomad Nation is helping you as a solopreneur by employing you. That might sound paradoxically, but it&#x27;s true. Only through hiring you it will be possible for you to easily apply for long term residency as a non-EU citizen. Also as an employee you&#x27;ll benefit from much reduced bureaucrativ overhead for your business.</p>
+          <p>As a Tourist member you have to pay taxes and social security contributions every month according to the revenue of that month. To help you calculate what that means in terms of &quot;money in your pocket&quot;, you can run your numbers through the calculator here.</p>
+          <ul role="list">
+            <li>Enter your expected monthly revenue and we&#x27;ll tell you what you can expect to be left for your to pay out.</li>
+            <li>Or enter what you want to pay to yourself and we&#x27;ll show you which revenue you&#x27;d need for that.</li>
+          </ul>
         </div>
         <div class="w-col w-col-6 w-col-medium-6">
           <div class="calculator">
@@ -245,7 +261,7 @@
                     <div>Revenue</div>
                   </div>
                   <div class="calculator_resultcol">
-                    <div><span id="revenue">0.00</span></div>
+                    <div><span id="revenue">0.00€</span></div>
                   </div>
                 </div>
                 <div class="calculator_row">
@@ -253,7 +269,7 @@
                     <div>Taxes</div>
                   </div>
                   <div class="calculator_resultcol">
-                    <div><span id="totaltaxes">0.00</span></div>
+                    <div><span id="totaltaxes">0.00€</span></div>
                   </div>
                 </div>
                 <div class="calculator_row">
@@ -261,7 +277,7 @@
                     <div>Social Security</div>
                   </div>
                   <div class="calculator_resultcol">
-                    <div><span id="totalsocialsec">0.00</span></div>
+                    <div><span id="totalsocialsec">0.00€</span></div>
                   </div>
                 </div>
                 <div class="calculator_row calculator_row-separator">
@@ -269,7 +285,7 @@
                     <div>Payout</div>
                   </div>
                   <div class="calculator_resultcol">
-                    <div><span id="payout" class="calculator_payout">0.00</span></div>
+                    <div><span id="payout" class="calculator_payout">0.00€</span></div>
                   </div>
                 </div>
               </form>
@@ -314,16 +330,15 @@
           <a href="../../index.html" class="logo-footer w-nav-brand"><img src="../../images/NN-Logo-cropped.svg" loading="lazy" alt=""></a>
           <p>Nomad Nation OOD<br>30-32, Gen. E.I. Totleben Blvd., fl 2<br>1606 Sofia<br>Bulgaria</p>
         </div>
-        <div class="w-col w-col-4">
-          <h2>Follow the Conversation</h2>
-          <p><strong>Join our group on facebook and be part of Nomad Nation from the beginning.</strong><br></p>
-          <a href="https://www.facebook.com/groups/nomadnation.org" target="_blank" class="link link-largefutura">Join group →</a>
-        </div>
+        <div class="w-col w-col-4"></div>
         <div class="w-col w-col-4">
           <div class="social">
             <a href="#" class="social_icon social_icon-mail w-inline-block"></a>
             <a href="https://www.facebook.com/groups/nomadnation.org" class="social_icon social_icon-facebook w-inline-block"></a>
           </div>
+          <h2>Follow the Conversation</h2>
+          <p><strong>Join our group on facebook and be part of Nomad Nation from the beginning.</strong><br></p>
+          <a href="https://www.facebook.com/groups/nomadnation.org" target="_blank" class="link link-largefutura">Join group →</a>
         </div>
       </div>
     </div>
