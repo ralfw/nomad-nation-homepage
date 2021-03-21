@@ -240,6 +240,7 @@ a {
 
 .button.button-menu {
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .heading {
@@ -733,10 +734,10 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .social_icon {
@@ -1378,6 +1379,20 @@ a {
 
 .mt-0 {
   margin-top: 0px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pagetitle {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: futura-pt, sans-serif;
+  color: #009192;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 991px) {
