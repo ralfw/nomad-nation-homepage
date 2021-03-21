@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dues Calculator</title>
+</head>
+<body>
+<h1>Dues Calculator</h1>
+
+<select id="incometype">
+    <option value="revenue">Revenue</option>
+    <option value="payout">Payout</option>
+</select>
+
+<input id="income" type="number" value="0"/>
+
+<select id="currency">
+    <option value="EUR">€</option>
+    <option value="BGN">лв</option>
+    <option value="GBP">£</option>
+    <option value="USD">$</option>
+</select>
+
+<span id="exchangeratio">(BGN:?)</span>
+
+<br/>
+
+<table>
+    <tr>
+        <td>
+            Payout
+        </td>
+        <td>
+            <span id="payout">0.00</span>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Taxes
+        </td>
+        <td>
+            <span id="totaltaxes">0.00</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Social security
+        </td>
+        <td>
+            <span id="totalsocialsec">0.00</span>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Revenue
+        </td>
+        <td>
+            <span id="revenue">0.00</span>
+        </td>
+    </tr>
+</table>
+
+</body>
+<script src="dues-calculator.js"></script>
+</html>
