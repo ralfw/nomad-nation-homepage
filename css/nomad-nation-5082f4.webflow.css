@@ -170,6 +170,15 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #ff5e17;
+  text-decoration: none;
+}
+
+a.w--current {
+  color: #ff4e00;
+}
+
 .navbar {
   margin-bottom: 20px;
   padding-top: 20px;
@@ -184,9 +193,15 @@ a {
 
 .navlink {
   margin-top: 10px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
   font-family: futura-pt, sans-serif;
   font-size: 18px;
   font-weight: 600;
+}
+
+.navlink:hover {
+  color: #ff4e00;
 }
 
 .navlink.w--current {
@@ -211,7 +226,7 @@ a {
 }
 
 .section-hero {
-  margin-bottom: -50px;
+  margin-bottom: -100px;
   padding-top: 0px;
   padding-bottom: 150px;
   background-image: url('../images/bg-top.svg');
@@ -233,9 +248,17 @@ a {
   padding: 10px 25px;
   border-radius: 20px;
   background-color: #ff4e00;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
   font-family: futura-pt, sans-serif;
   font-size: 18px;
   font-weight: 600;
+}
+
+.button:hover {
+  background-color: #ff5e17;
+  box-shadow: 0 0 0 2px #f04900;
+  color: #fff;
 }
 
 .button.button-menu {
@@ -513,6 +536,16 @@ a {
   background-image: url('../images/country-bulgaria.svg');
   background-position: 0px 0px;
   background-size: contain;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.embassy:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .embassy.embassy-germany {
@@ -724,7 +757,7 @@ a {
 }
 
 .logo-footer {
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 20px;
   padding-right: 40px;
 }
@@ -1250,7 +1283,12 @@ a {
   display: flex;
   margin-top: 10px;
   padding-top: 5px;
+  padding-right: 71px;
   padding-bottom: 5px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-size: 16px;
 }
 
@@ -1365,6 +1403,7 @@ a {
   border-style: solid;
   border-width: 2px;
   border-color: rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 .calculator_input:focus {
@@ -1395,6 +1434,121 @@ a {
   font-weight: 600;
 }
 
+.footerlinks {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.footerlinks_item {
+  margin-bottom: 5px;
+}
+
+.footerlinks_subitem {
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.footerlinkcol {
+  margin-top: 60px;
+  padding-left: 40px;
+}
+
+.footerlinkcol.pl-30 {
+  padding-left: 30px;
+}
+
+.linkarrow {
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.linkarrow:hover {
+  margin-right: 7px;
+}
+
+.linkarrow-left {
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.linkarrow-left:hover {
+  margin-right: 10px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.section-duescalcpage {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.section-duescalcpage.hide {
+  display: none;
+}
+
+.taxcalcimage {
+  max-width: 400px;
+  margin-top: 0px;
+  margin-bottom: -103px;
+  text-align: center;
+}
+
+.taxcalcimage.image-center {
+  text-align: center;
+}
+
+.taxcalcimage.image-right {
+  text-align: right;
+}
+
+.taxcalcimage.image-right.image-paddingtop {
+  margin-top: 20px;
+}
+
+.taxcalcimage.mb-40 {
+  margin-bottom: 40px;
+}
+
+.plantitle-copy {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: futura-pt, sans-serif;
+  color: #009192;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 600;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.navdropdown_toggle {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-family: futura-pt, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navdropdown_toggle:hover {
+  color: #ff4e00;
+}
+
+.navdropdown_arrow.w--open {
+  border-radius: 0px;
+  background-color: #fff;
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.navdropdown_text {
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 991px) {
   .plan_section.plan_section-large {
     min-height: 362px;
@@ -1418,6 +1572,10 @@ a {
     padding-left: 45px;
     background-position: 15px 20px;
     font-size: 18px;
+  }
+
+  .calculator_row {
+    padding-right: 10px;
   }
 }
 
@@ -1524,6 +1682,12 @@ a {
     overflow: visible;
     margin-top: 40px;
   }
+
+  .taxcalcimage.image-right.image-paddingtop {
+    display: none;
+    overflow: visible;
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1599,6 +1763,11 @@ a {
 
   .section-footer {
     padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .logo-footer {
+    padding-left: 0px;
   }
 
   .logo-footer.w--current {
@@ -1681,6 +1850,16 @@ a {
 
   .calculator_revenuecol {
     width: auto;
+  }
+
+  .footerlinkcol {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+  }
+
+  .taxcalcimage {
+    margin-bottom: 0px;
   }
 }
 

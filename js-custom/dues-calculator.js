@@ -7,17 +7,20 @@ var MAX_SOCIAL_SEC_INCOME_BGN = 3000.00;
 function onInteraction(view) {
     var model = view.Model;
     model.ExchangeRatio = EXCHANGE_RATIOS[model.Currency];
+    var periodFactor = model.IncomePeriod == IncomePeriods.Month ? 1.0 : 12.0;
     var socialSecurityShares;
     var grossIncome;
     if (model.IncomeType == IncomeTypes.Revenue) {
-        grossIncome = model.Income / (1 + SOCIAL_SEC_EMPLOYER_PCT);
-        socialSecurityShares = CalculateSocialSecurity(grossIncome, model.ExchangeRatio);
+        var monthlyGrossIncome = (model.Income / periodFactor) / (1 + SOCIAL_SEC_EMPLOYER_PCT);
+        var monthlySocialSecurityShares = CalculateSocialSecurity(monthlyGrossIncome, model.ExchangeRatio);
+        socialSecurityShares = monthlySocialSecurityShares.Multiply(periodFactor);
         grossIncome = model.Income - socialSecurityShares.Employer;
     }
     else if (model.IncomeType == IncomeTypes.Payout) {
         var taxableIncome_1 = model.Income / (1 - TAX_PCT);
-        grossIncome = taxableIncome_1 / (1 - SOCIAL_SEC_EMPLOYEE_PCT);
-        socialSecurityShares = CalculateSocialSecurity(grossIncome, model.ExchangeRatio);
+        var monthlyGrossIncome = (taxableIncome_1 / periodFactor) / (1 - SOCIAL_SEC_EMPLOYEE_PCT);
+        var monthlySocialSecurityShares = CalculateSocialSecurity(monthlyGrossIncome, model.ExchangeRatio);
+        socialSecurityShares = monthlySocialSecurityShares.Multiply(periodFactor);
         grossIncome = taxableIncome_1 + socialSecurityShares.Employee;
     }
     model.TotalSocialSec = socialSecurityShares.Total;
@@ -30,6 +33,12 @@ function onInteraction(view) {
 var SocialSecurityShares = /** @class */ (function () {
     function SocialSecurityShares() {
     }
+    SocialSecurityShares.prototype.Multiply = function (factor) {
+        var x = new SocialSecurityShares();
+        x.Employee = this.Employee * factor;
+        x.Employer = this.Employer * factor;
+        return x;
+    };
     Object.defineProperty(SocialSecurityShares.prototype, "Total", {
         get: function () {
             return this.Employee + this.Employer;
@@ -57,6 +66,11 @@ var IncomeTypes;
     IncomeTypes[IncomeTypes["Payout"] = 0] = "Payout";
     IncomeTypes[IncomeTypes["Revenue"] = 1] = "Revenue";
 })(IncomeTypes || (IncomeTypes = {}));
+var IncomePeriods;
+(function (IncomePeriods) {
+    IncomePeriods[IncomePeriods["Month"] = 0] = "Month";
+    IncomePeriods[IncomePeriods["Year"] = 1] = "Year";
+})(IncomePeriods || (IncomePeriods = {}));
 var Currencies;
 (function (Currencies) {
     Currencies[Currencies["EUR"] = 0] = "EUR";
@@ -67,6 +81,7 @@ var Currencies;
 var Model = /** @class */ (function () {
     function Model() {
         this.IncomeType = IncomeTypes.Revenue;
+        this.IncomePeriod = IncomePeriods.Month;
         this.Currency = Currencies.EUR;
         this.ExchangeRatio = EXCHANGE_RATIOS[Currencies.EUR];
         this.Payout = 0.0;
@@ -85,6 +100,7 @@ var View = /** @class */ (function () {
         var _this = this;
         this.INCOME_TYPE_OPTIONS = ["payout", "revenue"];
         this.CURRENCY_OPTION = ["EUR", "BGN", "GBP", "USD"];
+        this.INCOME_PERIOD_OPTIONS = ["month", "year"];
         this.sb_incomeType = document.getElementById("incometype");
         this.sb_incomeType.onchange = function () { return _this.OnChanged(_this); };
         this.tx_income = document.getElementById("income");
@@ -108,6 +124,8 @@ var View = /** @class */ (function () {
         this.sb_currency = document.getElementById("currency");
         this.sb_currency.onchange = function () { return _this.OnChanged(_this); };
         this.lb_exchangeRatio = document.getElementById("exchangeratio");
+        this.sb_incomePeriod = document.getElementById("incomeperiod");
+        this.sb_incomePeriod.onchange = function () { return _this.OnChanged(_this); };
         this.lb_payout = document.getElementById("payout");
         this.lb_totalTaxes = document.getElementById("totaltaxes");
         this.lb_totalSocialSec = document.getElementById("totalsocialsec");
@@ -118,6 +136,7 @@ var View = /** @class */ (function () {
             var model = new Model();
             model.IncomeType = this.IncomeType;
             model.Currency = this.Currency;
+            model.IncomePeriod = this.IncomePeriod;
             var x = parseFloat(this.tx_income.value);
             model.Income = isNaN(x) ? 0.0 : x;
             return model;
@@ -130,6 +149,7 @@ var View = /** @class */ (function () {
         //this.tx_income.value = model.Income.toFixed(2);
         this.Currency = model.Currency;
         this.lb_exchangeRatio.innerText = "(1лв=" + model.ExchangeRatio.toFixed(5) + CURRENCY_SYMBOLS[model.Currency] + ")";
+        this.IncomePeriod = model.IncomePeriod;
         this.lb_payout.innerText = model.Payout.toFixed(2) + CURRENCY_SYMBOLS[model.Currency];
         this.lb_totalTaxes.innerText = model.TotalTaxes.toFixed(2) + CURRENCY_SYMBOLS[model.Currency];
         this.lb_totalSocialSec.innerText = model.TotalSocialSec.toFixed(2) + CURRENCY_SYMBOLS[model.Currency];
@@ -159,6 +179,19 @@ var View = /** @class */ (function () {
         },
         set: function (value) {
             this.sb_currency.value = this.CURRENCY_OPTION[value];
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(View.prototype, "IncomePeriod", {
+        get: function () {
+            switch (this.sb_incomePeriod.value) {
+                case this.INCOME_PERIOD_OPTIONS[IncomePeriods.Month]: return IncomePeriods.Month;
+                case this.INCOME_PERIOD_OPTIONS[IncomePeriods.Year]: return IncomePeriods.Year;
+            }
+        },
+        set: function (value) {
+            this.sb_incomePeriod.value = this.INCOME_PERIOD_OPTIONS[value];
         },
         enumerable: false,
         configurable: true

@@ -11,18 +11,21 @@ function onInteraction(view:View) {
 
     model.ExchangeRatio = EXCHANGE_RATIOS[model.Currency];
 
+    let periodFactor = model.IncomePeriod == IncomePeriods.Month ? 1.0 : 12.0;
     let socialSecurityShares:SocialSecurityShares;
     let grossIncome:number;
 
     if (model.IncomeType == IncomeTypes.Revenue) {
-        grossIncome = model.Income / (1 + SOCIAL_SEC_EMPLOYER_PCT);
-        socialSecurityShares = CalculateSocialSecurity(grossIncome, model.ExchangeRatio);
+        let monthlyGrossIncome = (model.Income / periodFactor) / (1 + SOCIAL_SEC_EMPLOYER_PCT);
+        let monthlySocialSecurityShares = CalculateSocialSecurity(monthlyGrossIncome, model.ExchangeRatio);
+        socialSecurityShares = monthlySocialSecurityShares.Multiply(periodFactor);
         grossIncome = model.Income - socialSecurityShares.Employer;
     }
     else if (model.IncomeType == IncomeTypes.Payout) {
         let taxableIncome = model.Income / (1-TAX_PCT);
-        grossIncome = taxableIncome / (1-SOCIAL_SEC_EMPLOYEE_PCT);
-        socialSecurityShares = CalculateSocialSecurity(grossIncome, model.ExchangeRatio);
+        let monthlyGrossIncome = (taxableIncome / periodFactor) / (1-SOCIAL_SEC_EMPLOYEE_PCT);
+        let monthlySocialSecurityShares = CalculateSocialSecurity(monthlyGrossIncome, model.ExchangeRatio);
+        socialSecurityShares = monthlySocialSecurityShares.Multiply(periodFactor);
         grossIncome = taxableIncome + socialSecurityShares.Employee;
     }
 
@@ -39,6 +42,13 @@ function onInteraction(view:View) {
 class SocialSecurityShares {
     public Employee:number;
     public Employer:number;
+
+    public Multiply(factor:number): SocialSecurityShares {
+        let x = new SocialSecurityShares();
+        x.Employee = this.Employee * factor;
+        x.Employer = this.Employer * factor;
+        return x;
+    }
 
     public get Total() {
         return this.Employee + this.Employer;
@@ -68,6 +78,11 @@ enum IncomeTypes {
     Revenue
 }
 
+enum IncomePeriods {
+    Month,
+    Year
+}
+
 enum Currencies {
     EUR,
     BGN,
@@ -79,6 +94,7 @@ enum Currencies {
 
 class Model {
     public IncomeType:IncomeTypes = IncomeTypes.Revenue;
+    public IncomePeriod:IncomePeriods = IncomePeriods.Month;
     public Income:number;
     public Currency:Currencies = Currencies.EUR;
     public ExchangeRatio:number = EXCHANGE_RATIOS[Currencies.EUR];
@@ -103,6 +119,7 @@ class View {
     tx_income:HTMLInputElement;
     sb_currency:HTMLSelectElement;
     lb_exchangeRatio:HTMLElement;
+    sb_incomePeriod:HTMLSelectElement;
 
     lb_payout:HTMLElement;
     lb_totalTaxes:HTMLElement;
@@ -137,6 +154,9 @@ class View {
 
         this.lb_exchangeRatio = document.getElementById("exchangeratio");
 
+        this.sb_incomePeriod = document.getElementById("incomeperiod") as HTMLSelectElement;
+        this.sb_incomePeriod.onchange = () => this.OnChanged(this);
+
         this.lb_payout = document.getElementById("payout");
         this.lb_totalTaxes = document.getElementById("totaltaxes");
         this.lb_totalSocialSec = document.getElementById("totalsocialsec");
@@ -148,6 +168,7 @@ class View {
         let model = new Model();
         model.IncomeType = this.IncomeType;
         model.Currency = this.Currency;
+        model.IncomePeriod = this.IncomePeriod;
 
         let x = parseFloat(this.tx_income.value);
         model.Income = isNaN(x) ? 0.0 : x;
@@ -160,6 +181,8 @@ class View {
         //this.tx_income.value = model.Income.toFixed(2);
         this.Currency = model.Currency;
         this.lb_exchangeRatio.innerText = "(1лв=" + model.ExchangeRatio.toFixed(5) + CURRENCY_SYMBOLS[model.Currency] + ")";
+        this.IncomePeriod = model.IncomePeriod;
+
 
         this.lb_payout.innerText = model.Payout.toFixed(2) + CURRENCY_SYMBOLS[model.Currency];
         this.lb_totalTaxes.innerText = model.TotalTaxes.toFixed(2) + CURRENCY_SYMBOLS[model.Currency];
@@ -192,6 +215,17 @@ class View {
     }
     set Currency(value:Currencies) {
         this.sb_currency.value = this.CURRENCY_OPTION[value];
+    }
+
+    INCOME_PERIOD_OPTIONS = ["month","year"]
+    get IncomePeriod(): IncomePeriods {
+        switch(this.sb_incomePeriod.value){
+            case this.INCOME_PERIOD_OPTIONS[IncomePeriods.Month]: return IncomePeriods.Month;
+            case this.INCOME_PERIOD_OPTIONS[IncomePeriods.Year]: return IncomePeriods.Year;
+        }
+    }
+    set IncomePeriod(value:IncomePeriods) {
+        this.sb_incomePeriod.value = this.INCOME_PERIOD_OPTIONS[value];
     }
 
     public OnChanged: (view: View) => void;
