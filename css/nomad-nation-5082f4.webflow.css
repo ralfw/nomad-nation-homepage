@@ -256,7 +256,7 @@ a.w--current {
 }
 
 .button:hover {
-  background-color: #ff5e17;
+  background-color: #ff4e00;
   box-shadow: 0 0 0 2px #f04900;
   color: #fff;
 }
@@ -1118,7 +1118,7 @@ a.w--current {
 
 .startimage {
   margin-top: 40px;
-  margin-bottom: -50px;
+  margin-bottom: -90px;
 }
 
 .social_icon-menu {
@@ -1549,6 +1549,168 @@ a.w--current {
   margin-right: 5px;
 }
 
+.section-herohome {
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 150px;
+  background-image: url('../images/bg-top.svg');
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.residencytabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.tab-link-tab-1 {
+  padding-left: 60px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #fff;
+  background-image: url('../images/radio-off.svg');
+  background-position: 0px 20px;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.tab-link-tab-1.w--current {
+  background-color: #fff;
+  background-image: url('../images/radio-on.svg');
+}
+
+.tab-link-tab-2 {
+  padding-left: 60px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #fff;
+  background-image: url('../images/radio-off.svg');
+  background-position: 0px 20px;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.tab-link-tab-2.w--current {
+  background-color: #fff;
+  background-image: url('../images/radio-on.svg');
+}
+
+.residencytab_modehead {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: futura-pt, sans-serif;
+  color: #009192;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.residency_steptitle {
+  margin-top: 12px;
+  color: #ff4e00;
+  font-size: 28px;
+}
+
+.residency_stephead {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 50px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.residency_stepnumber {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 39px;
+  height: 39px;
+  margin-right: 25px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/circle.svg');
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.residency_stepnumbertext {
+  font-family: futura-pt, sans-serif;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.residency_stepcontent {
+  padding-left: 65px;
+}
+
+.residency_stepitem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.residency_stepitemicon {
+  width: 64px;
+  height: 64px;
+  margin-top: 5px;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.residency_stepitemtext {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.residency_stepitemtitle {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.residency_link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  font-family: futura-pt, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.residency_linkicon {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 991px) {
   .plan_section.plan_section-large {
     min-height: 362px;
@@ -1860,6 +2022,10 @@ a.w--current {
 
   .taxcalcimage {
     margin-bottom: 0px;
+  }
+
+  .section-herohome {
+    padding-bottom: 20px;
   }
 }
 
