@@ -1937,6 +1937,16 @@ a.w--current {
     padding-bottom: 0px;
   }
 
+  .logo {
+    width: 240px;
+  }
+
+  .navlink {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .title-orange {
     font-size: 32px;
     line-height: 33px;
@@ -2104,8 +2114,47 @@ a.w--current {
     margin-bottom: 0px;
   }
 
+  .navdropdown_toggle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .section-herohome {
     padding-bottom: 20px;
+  }
+
+  .residency_stepnumber {
+    margin-left: 5px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .residency_stepcontent {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .residency_stepitemicon {
+    width: 40px;
+  }
+
+  .checklist_check {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .menu-button {
+    background-color: #fff;
+  }
+
+  .navmenu {
+    padding-top: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.15);
   }
 }
 
