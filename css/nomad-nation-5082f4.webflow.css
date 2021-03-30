@@ -579,6 +579,10 @@ a.w--current {
   padding-bottom: 60px;
 }
 
+.section-faq {
+  margin-top: 100px;
+}
+
 .faqtoggle {
   display: block;
   margin-bottom: 20px;
@@ -1098,7 +1102,7 @@ a.w--current {
   width: 20px;
   height: 20px;
   margin-top: 5px;
-  background-image: url('../images/help.svg');
+  background-image: url('../images/help_1.svg');
   background-position: 0px 0px;
   background-size: 20px 20px;
   background-repeat: no-repeat;
@@ -1239,7 +1243,7 @@ a.w--current {
 }
 
 .plantitle {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 20px;
   font-family: futura-pt, sans-serif;
   color: #009192;
@@ -1707,8 +1711,84 @@ a.w--current {
   font-weight: 600;
 }
 
+.residency_link.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .residency_linkicon {
   margin-right: 10px;
+}
+
+.list_item {
+  margin-bottom: 15px;
+}
+
+.list {
+  padding-left: 0px;
+}
+
+.checklist_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.checklist_check {
+  width: 18px;
+  height: 18px;
+  margin-top: 0px;
+  margin-right: 10px;
+  border-radius: 0px;
+}
+
+.checklist_check.w--redirected-checked {
+  background-color: #ff4e00;
+}
+
+.section-helpcontent {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.section-helpcontent.hide {
+  display: none;
+}
+
+.section-helpcenter {
+  margin-top: 100px;
+}
+
+.helplink {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  background-image: url('../images/help.svg');
+  background-position: 0px 0px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  font-family: futura-pt, sans-serif;
+  font-size: 18px;
+}
+
+.helpimage {
+  margin-bottom: 40px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.navdropdown_link.w--current {
+  color: #ff4e00;
 }
 
 @media screen and (max-width: 991px) {
