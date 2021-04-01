@@ -1568,7 +1568,7 @@ a.w--current {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .tab-link-tab-1 {
@@ -1641,8 +1641,9 @@ a.w--current {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 39px;
-  height: 39px;
+  width: 40px;
+  height: 40px;
+  min-width: 0px;
   margin-right: 25px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1652,10 +1653,12 @@ a.w--current {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/circle.svg');
-  background-position: 0px 0px;
-  background-size: auto;
-  background-repeat: no-repeat;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 20px;
+  background-color: #ff4e00;
 }
 
 .residency_stepnumbertext {
@@ -1666,7 +1669,7 @@ a.w--current {
 }
 
 .residency_stepcontent {
-  padding-left: 65px;
+  padding-left: 0px;
 }
 
 .residency_stepitem {
@@ -1793,6 +1796,22 @@ a.w--current {
 
 .paragraph-3 {
   margin-top: 10px;
+}
+
+.residencytabs_tab {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0px;
+  background-color: transparent;
+  font-family: futura-pt, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.residencytabs_tab.w--current {
+  background-color: transparent;
 }
 
 @media screen and (max-width: 991px) {
