@@ -1898,7 +1898,10 @@ a.w--current {
 
 .residencytabs_tab-4.w--current {
   background-color: transparent;
-  background-image: url('../images/step-4-active.svg'), url('../images/step-arrow.svg');
+  background-image: url('../images/step-4-active.svg');
+  background-position: 0% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .residencytabs_tab-4.w--current:focus {
