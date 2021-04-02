@@ -1530,8 +1530,9 @@ a.w--current {
 }
 
 .navdropdown_toggle {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   font-family: futura-pt, sans-serif;
