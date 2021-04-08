@@ -1,13 +1,13 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Thu Apr 08 2021 07:54:42 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="6058c577d874b24dd93cac76" data-wf-site="60424e1d2270db32af71da2d">
+<html data-wf-page="6066b998794fda7cd0883cd8" data-wf-site="60424e1d2270db32af71da2d">
 <head>
   <meta charset="utf-8">
-  <title>Tax Calculator</title>
+  <title>Virtual Assistance</title>
   <meta content="Learn how to set up your solopreneur business in Bulgaria and book a free consultation with the local ambassadors." name="description">
-  <meta content="Tax Calculator" property="og:title">
+  <meta content="Virtual Assistance" property="og:title">
   <meta content="Learn how to set up your solopreneur business in Bulgaria and book a free consultation with the local ambassadors." property="og:description">
-  <meta content="Tax Calculator" property="twitter:title">
+  <meta content="Virtual Assistance" property="twitter:title">
   <meta content="Learn how to set up your solopreneur business in Bulgaria and book a free consultation with the local ambassadors." property="twitter:description">
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
@@ -49,7 +49,7 @@
               <div class="navdropdown_text">Tools &amp; Services</div>
             </div>
             <nav class="navdropdown_arrow w-dropdown-list">
-              <a href="../../bulgaria/tools/tax-calculator.html" aria-current="page" class="navdropdown_link w-dropdown-link w--current">Tax Calculator</a>
+              <a href="../../bulgaria/tools/tax-calculator.html" class="navdropdown_link w-dropdown-link">Tax Calculator</a>
               <a href="../../bulgaria/tools/residency.html" class="navdropdown_link w-dropdown-link">Residency Application</a>
             </nav>
           </div>
@@ -63,9 +63,8 @@
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-6">
-          <h1 class="pagetitle">Tax Calculator</h1>
+          <h1 class="pagetitle">Virtual Assistance</h1>
           <p>Before you decide if you really want to move your business to Bulgaria you&#x27;re probably interested in knowing how much taxes you&#x27;re roughly facing to pay. Our tax calculator is here to help you figure that out.</p>
-          <p>Since all membership plans require you to pay personal income tax and social security contributions, the calculator focuses on that. It leaves company taxes and dividends out of the picture; both are only relevant if you should opt for the Expad (EOOD) plan.</p>
         </div>
         <div class="w-col w-col-6">
           <div class="taxcalcimage"><img src="../../images/calculator.svg" loading="lazy" alt="" class="image-2"></div>
@@ -73,87 +72,35 @@
       </div>
     </div>
   </div>
-  <div class="section-duescalcpage">
+  <div class="section-assistance">
     <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-6 w-col-medium-6">
-          <div class="calculator">
-            <div class="w-form">
-              <form id="email-form" name="email-form" data-name="Email Form">
-                <div class="calculator_settings">
-                  <div class="calculator_settingscol"><select id="incomeperiod" name="incomeperiod" data-name="incomeperiod" class="select select-large w-select">
-                      <option value="month">Monthly</option>
-                      <option value="year">Yearly</option>
-                    </select></div>
-                  <div class="calculator_settingscol"><select id="incometype" name="incometype" data-name="incometype" class="select select-large w-select">
-                      <option value="revenue">Gross Payout</option>
-                      <option value="payout">Net Payout</option>
-                    </select></div>
-                  <div class="calculator_settingscol calculator_settingscol-center"><input type="number" maxlength="256" name="income" data-name="income" placeholder="0" id="income" class="calculator_input w-input"></div>
-                  <div class="calculator_settingscol">
-                    <div class="calculator_exchange"><span id="exchangeratio" class="calculator_exchange">(BGN:?)</span></div><select id="currency" name="currency" data-name="currency" class="select w-select">
-                      <option value="EUR">€</option>
-                      <option value="BGN">лв</option>
-                      <option value="GBP">£</option>
-                      <option value="USD">$</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="calculator_row">
-                  <div class="calculator_labelcol">
-                    <div>Gross Payout</div>
-                  </div>
-                  <div class="calculator_resultcol">
-                    <div><span id="revenue">0.00€</span></div>
-                  </div>
-                </div>
-                <div class="calculator_row">
-                  <div class="calculator_labelcol">
-                    <div>Taxes</div>
-                  </div>
-                  <div class="calculator_resultcol">
-                    <div><span id="totaltaxes">0.00€</span></div>
-                  </div>
-                </div>
-                <div class="calculator_row">
-                  <div class="calculator_labelcol">
-                    <div>Social Security</div>
-                  </div>
-                  <div class="calculator_resultcol">
-                    <div><span id="totalsocialsec">0.00€</span></div>
-                  </div>
-                </div>
-                <div class="calculator_row calculator_row-separator">
-                  <div class="calculator_labelcol">
-                    <div>Payout</div>
-                  </div>
-                  <div class="calculator_resultcol">
-                    <div><span id="payout" class="calculator_payout">0.00€</span></div>
-                  </div>
-                </div>
-              </form>
-              <div class="w-form-done">
-                <div>Thank you! Your submission has been received!</div>
-              </div>
-              <div class="w-form-fail">
-                <div>Oops! Something went wrong while submitting the form.</div>
-              </div>
-            </div>
-          </div>
+      <div data-duration-in="300" data-duration-out="100" class="servicetabs w-tabs">
+        <div class="servicetab_menu w-tab-menu">
+          <a data-w-tab="Tab 1" class="servicetabs_tab w-inline-block w-tab-link w--current">
+            <div>Transliteration</div>
+          </a>
+          <a data-w-tab="Tab 2" class="servicetabs_tab w-inline-block w-tab-link">
+            <div>Translation</div>
+          </a>
+          <a data-w-tab="Tab 3" class="servicetabs_tab w-inline-block w-tab-link">
+            <div>Call Service</div>
+          </a>
+          <a data-w-tab="Tab 4" class="servicetabs_tab w-inline-block w-tab-link">
+            <div>Research</div>
+          </a>
+          <a data-w-tab="Tab 5" class="servicetabs_tab w-inline-block w-tab-link">
+            <div>Other Requests</div>
+          </a>
         </div>
-        <div class="pl-30 w-col w-col-6 w-col-medium-6">
-          <p><strong>The calculator can answer two questions:</strong></p>
-          <ul role="list">
-            <li>&quot;Given a certain net revenue (revenue after deducting expenses) how much money will end up in my pocket (net income or payout)?&quot;</li>
-            <li>&quot;If I want a certain net income in my pocket, how much net revenue would I need to make?&quot;</li>
-          </ul>
-          <p>You can choose to answer your question for a single month or a whole year. If you provide an annual income the calculator will evenly distribute the money across 12 months; that&#x27;s important to know for calculation of the social security contributions.</p>
-          <p><strong>To set your expectations right, here are some rough figures:</strong></p>
-          <ul role="list">
-            <li>The income tax is just 10% of the taxable income.</li>
-            <li>The taxable income is less than the net revenue, because social security is deducted first.</li>
-            <li>Social security contributions amount to some 33%. But they are capped! They are only calculated up to 1190€ net income (1825€ net revenue) per month. More income will not lead to more social security contributions.</li>
-          </ul>
+        <div class="w-tab-content">
+          <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+            <p>Before you decide if you really want to move your business to Bulgaria you&#x27;re probably interested in knowing how much taxes you&#x27;re roughly facing to pay. Our tax calculator is here to help you figure that out.</p>
+            <div class="w-embed w-iframe"><iframe width="560" height="580" src="https://app.pipefy.com/public/form/gsXolL_p?embedded=true" frameborder="0"></iframe></div>
+          </div>
+          <div data-w-tab="Tab 2" class="w-tab-pane"></div>
+          <div data-w-tab="Tab 3" class="w-tab-pane"></div>
+          <div data-w-tab="Tab 4" class="w-tab-pane"></div>
+          <div data-w-tab="Tab 5" class="w-tab-pane"></div>
         </div>
       </div>
     </div>
@@ -190,7 +137,7 @@
           </ul>
           <ul role="list" class="footerlinks">
             <li class="footerlinks_item">
-              <a href="../../bulgaria/tools/tax-calculator.html" aria-current="page" class="w--current"><strong>Tax Calculator</strong></a>
+              <a href="../../bulgaria/tools/tax-calculator.html"><strong>Tax Calculator</strong></a>
             </li>
           </ul>
         </div>

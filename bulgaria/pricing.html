@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Apr 02 2021 06:27:03 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Apr 08 2021 07:54:42 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="60425b63d537229b8ceeb461" data-wf-site="60424e1d2270db32af71da2d">
 <head>
   <meta charset="utf-8">
@@ -65,7 +65,7 @@
     </div>
     <div class="w-container">
       <div class="w-row">
-        <div class="w-col w-col-6 w-col-tiny-tiny-stack">
+        <div class="w-col w-col-6">
           <div class="w-form">
             <div class="wizardhead"><strong>Your situation:</strong></div>
             <form id="email-form" name="email-form" data-name="Email Form">
@@ -94,7 +94,7 @@
                       </div>
                       <div class="help_image"></div>
                     </div>
-                  </div><select id="residency" name="residency" data-name="residency" class="select w-select">
+                  </div><select id="residency" name="residency" data-name="Residency" class="select w-select">
                     <option value="">Select one...</option>
                     <option value="bg-yes">Yes</option>
                     <option value="bg-no">No</option>
@@ -106,7 +106,7 @@
               <div class="mt-20 w-row">
                 <div class="column column-paddedright w-col w-col-6 w-col-small-small-stack"><label for="type" class="label"><strong>Please check if true …</strong></label>
                   <div class="checkboxwithhelp"><label class="w-checkbox checkboxfield">
-                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="contractors" name="contractors" data-name="contractors" style="opacity:0;position:absolute;z-index:-1"><span for="contractors" class="checklabel w-form-label">I &#x27;m working with contractors</span>
+                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="contractors" name="contractors" data-name="Contractors" style="opacity:0;position:absolute;z-index:-1"><span for="contractors" class="checklabel w-form-label">I &#x27;m working with contractors</span>
                     </label>
                     <div class="help">
                       <div class="help_content">
@@ -117,7 +117,7 @@
                     </div>
                   </div>
                   <div class="checkboxwithhelp"><label class="w-checkbox checkboxfield">
-                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="employees" name="employees" data-name="employees" style="opacity:0;position:absolute;z-index:-1"><span for="employees" class="checklabel w-form-label">I (want to) have employees</span>
+                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="employees" name="employees" data-name="Employees" style="opacity:0;position:absolute;z-index:-1"><span for="employees" class="checklabel w-form-label">I (want to) have employees</span>
                     </label>
                     <div class="help">
                       <div class="help_content">
@@ -128,7 +128,7 @@
                     </div>
                   </div>
                   <div class="checkboxwithhelp"><label class="w-checkbox checkboxfield">
-                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="inventory" name="inventory" data-name="inventory" style="opacity:0;position:absolute;z-index:-1"><span for="inventory" class="checklabel w-form-label">My business needs an inventory</span>
+                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="inventory" name="inventory" data-name="Inventory" style="opacity:0;position:absolute;z-index:-1"><span for="inventory" class="checklabel w-form-label">My business needs an inventory</span>
                     </label>
                     <div class="help">
                       <div class="help_content">
@@ -139,7 +139,7 @@
                     </div>
                   </div>
                   <div class="checkboxwithhelp"><label class="w-checkbox checkboxfield">
-                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="liability" name="liability" data-name="liability" style="opacity:0;position:absolute;z-index:-1"><span for="liability" class="checklabel w-form-label">I need limited liability</span>
+                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="liability" name="liability" data-name="Liability" style="opacity:0;position:absolute;z-index:-1"><span for="liability" class="checklabel w-form-label">I need limited liability</span>
                     </label>
                     <div class="help">
                       <div class="help_image"></div>
@@ -151,7 +151,7 @@
                   </div>
                 </div>
                 <div class="column w-col w-col-6 w-col-small-small-stack">
-                  <div class="divlabel"><label for="revenue-2" class="label"><strong>Average revenue / year</strong></label>
+                  <div class="divlabel"><label for="revenue" class="label"><strong>Average revenue / year</strong></label>
                     <div class="help">
                       <div class="help_content">
                         <div class="help_close"><img src="../images/close.svg" loading="lazy" alt=""></div>
@@ -165,7 +165,7 @@
                     <option value="revenue-medium">15,000€ – 150,000€</option>
                     <option value="revenue-high">&gt; 150,000€</option>
                   </select>
-                  <div class="divlabel"><label for="expenses-2" class="label"><strong>Average expenses / year</strong></label>
+                  <div class="divlabel"><label for="expenses" class="label"><strong>Average expenses / year</strong></label>
                     <div class="help">
                       <div class="help_content">
                         <div class="help_close"><img src="../images/close.svg" loading="lazy" alt=""></div>
@@ -190,13 +190,13 @@
             </div>
           </div>
         </div>
-        <div class="column-paddedleft w-col w-col-6 w-col-tiny-tiny-stack">
+        <div class="w-col w-col-6">
           <div class="wizardhead"><strong>Our recommendation:</strong></div>
           <div class="planpreview">
+            <div class="planpreview_head planpreview_head-empty">
+              <h3 class="alpha-10">No recommendation yet</h3>
+            </div>
             <div id="planpreview-none" class="planpreview_body show">
-              <div class="planpreview_head planpreview_head-empty">
-                <h3 class="alpha-10">No recommendation yet</h3>
-              </div>
               <div class="wizardimage"><img src="../images/recommendation.svg" loading="lazy" alt="" class="image-2"></div>
             </div>
             <div id="planpreview-tourist" class="planpreview_body">
@@ -323,142 +323,170 @@
   <div id="plans" class="section-plans">
     <div class="w-container">
       <div class="w-row">
-        <div class="w-col w-col-3 w-col-medium-3 w-col-small-small-stack">
+        <div class="w-col w-col-6">
           <div class="plan">
-            <div id="plan-tourist" class="plan_body">
-              <div class="plan_head">
-                <h2>Tourist</h2>
-              </div>
-              <div class="plan_section plan_section-medium">
-                <div class="plan_type"><strong>Cobusiness</strong></div>
-                <div class="plan_text">Start billing from Bulgaria immediately through Nomad Nation.</div>
-                <a href="../bulgaria/plans/tourist.html">Learn more …</a>
-              </div>
-              <div class="plan_section plan_section-large">
-                <div class="plan_type"><strong>Pros</strong></div>
-                <ul role="list" class="w-list-unstyled">
-                  <li class="procon_pro">No company registration required</li>
-                  <li class="procon_pro">Business bank account</li>
-                  <li class="procon_pro">Incl. VAT number</li>
-                  <li class="procon_pro">Tax handled for you</li>
-                  <li class="procon_pro">Easy to cancel</li>
-                </ul>
-              </div>
-              <div class="plan_section plan_section-medium">
-                <div class="plan_type"><strong>Cons</strong></div>
-                <ul role="list" class="w-list-unstyled">
-                  <li class="procon_con">No assets / expenses</li>
-                  <li class="procon_con">Limited transaction </li>
-                </ul>
-              </div>
-              <div class="plan_section">
-                <div class="plan_text"><strong>Setup Time</strong></div>
-                <div class="plan_text"><span>1 Day</span></div>
-              </div>
-              <div class="plan_section">
-                <div class="plan_text"><strong>Maintenance effort</strong></div>
-                <div class="plan_text">None</div>
-              </div>
-              <div class="plan_section">
-                <div class="plan_text"><strong>Minimum term</strong></div>
-                <div class="plan_text">One month</div>
-              </div>
-              <div class="plan_section plan_section-small">
-                <div class="price">
-                  <div class="plan_price">59€ <span class="plan_unit">/ month</span></div>
-                  <div class="help">
-                    <div class="help_content">
-                      <div class="help_close"><img src="../images/close.svg" loading="lazy" alt=""></div>
-                      <p>The monthly fee covers the monthly bookkeeping and tax accounting as well as your Nomad Nation membership. A professional doing the bookkeeping is required for your business in Bulgaria.</p>
+            <div class="plan_category">
+              <div><strong>Hosted plans</strong></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div id="plan-tourist" class="plan_body">
+                  <div class="plan_head">
+                    <h2>Tourist</h2>
+                  </div>
+                  <div class="plan_section plan_section-medium">
+                    <div class="plan_type"><strong>Cobusiness</strong></div>
+                    <div class="plan_text">Get residency and start billing from Bulgaria immediately.</div>
+                    <a href="../bulgaria/plans/tourist.html">Learn more …</a>
+                  </div>
+                  <div class="plan_section">
+                    <div class="plan_type"><strong>Includes</strong></div>
+                    <ul role="list" class="w-list-unstyled">
+                      <li class="procon_incl">Residency registration support</li>
+                      <li class="procon_incl">Accounting and Payroll fees</li>
+                      <li class="procon_incl">VAT number</li>
+                    </ul>
+                  </div>
+                  <div class="plan_section plan_section-large">
+                    <div class="plan_type"><strong>Pros</strong></div>
+                    <ul role="list" class="w-list-unstyled">
+                      <li class="procon_pro">No company registration required</li>
+                      <li class="procon_pro">Tax handled for you</li>
+                      <li class="procon_pro">Easy to cancel</li>
+                    </ul>
+                  </div>
+                  <div class="plan_section plan_section-medium">
+                    <div class="plan_type"><strong>Cons</strong></div>
+                    <ul role="list" class="w-list-unstyled">
+                      <li class="procon_con">No assets / expenses</li>
+                      <li class="procon_con">Limited transaction </li>
+                    </ul>
+                  </div>
+                  <div class="plan_section">
+                    <div class="plan_text"><strong>Setup Time</strong></div>
+                    <div class="plan_text"><span>Immediately</span></div>
+                  </div>
+                  <div class="plan_section">
+                    <div class="plan_text"><strong>Maintenance effort</strong></div>
+                    <div class="plan_text">None</div>
+                  </div>
+                  <div class="plan_section">
+                    <div class="plan_text"><strong>Minimum term</strong></div>
+                    <div class="plan_text">One month</div>
+                  </div>
+                  <div class="plan_section plan_section-small">
+                    <div class="price">
+                      <div class="plan_price">59€ <span class="plan_unit">/ month</span></div>
+                      <div class="help">
+                        <div class="help_content">
+                          <div class="help_close"><img src="../images/close.svg" loading="lazy" alt=""></div>
+                          <p>The monthly fee covers the monthly bookkeeping and tax accounting as well as your Nomad Nation membership. A professional doing the bookkeeping is required for your business in Bulgaria.</p>
+                        </div>
+                        <div class="help_image"></div>
+                      </div>
                     </div>
-                    <div class="help_image"></div>
+                    <div class="plan_text">No setup fee</div>
+                  </div>
+                  <div class="plan_section plan_section-last">
+                    <a href="../bulgaria/contact.html" class="button-outline w-button">Talk to us</a>
                   </div>
                 </div>
-                <div class="plan_text">No setup fee</div>
               </div>
-              <div class="plan_section plan_section-last">
-                <a href="../bulgaria/contact.html" class="button w-button">Get started</a>
+              <div class="w-col w-col-6">
+                <div id="plan-resident" class="plan_body">
+                  <div class="plan_head">
+                    <h2>Resident</h2>
+                  </div>
+                  <div class="plan_section plan_section-medium">
+                    <div class="plan_type"><strong>Autonomous Employment</strong></div>
+                    <div class="plan_text">The easiest way to do business with residency option for non-EU citizens.</div>
+                    <a href="../bulgaria/plans/resident.html">Learn more …</a>
+                  </div>
+                  <div class="plan_section">
+                    <div class="plan_type"><strong>Includes</strong></div>
+                    <ul role="list" class="w-list-unstyled">
+                      <li class="procon_incl">Residency registration support</li>
+                      <li class="procon_incl">Accounting and Payroll fees</li>
+                      <li class="procon_incl">VAT number</li>
+                    </ul>
+                  </div>
+                  <div class="plan_section plan_section-large">
+                    <div class="plan_type"><strong>Pros</strong></div>
+                    <ul role="list" class="w-list-unstyled">
+                      <li class="procon_pro">No company registration required</li>
+                      <li class="procon_pro">Tax handled for you</li>
+                      <li class="procon_pro">Residency for non-EU citizens (blue card)</li>
+                    </ul>
+                  </div>
+                  <div class="plan_section plan_section-medium">
+                    <div class="plan_type"><strong>Cons</strong></div>
+                    <ul role="list" class="w-list-unstyled">
+                      <li class="procon_con">Limited expenses</li>
+                      <li class="procon_con">Limited assets</li>
+                    </ul>
+                  </div>
+                  <div class="plan_section">
+                    <div class="plan_text"><strong>Setup Time</strong></div>
+                    <div class="plan_text">3 Days</div>
+                  </div>
+                  <div class="plan_section">
+                    <div class="plan_text"><strong>Maintenance effort</strong></div>
+                    <div class="plan_text">None</div>
+                  </div>
+                  <div class="plan_section">
+                    <div class="plan_text"><strong>Minimum term</strong></div>
+                    <div class="plan_text">Three months</div>
+                  </div>
+                  <div class="plan_section plan_section-small">
+                    <div class="price">
+                      <div class="plan_price">99€ <span class="plan_unit">/ month</span></div>
+                      <div class="help">
+                        <div class="help_content">
+                          <div class="help_close"><img src="../images/close.svg" loading="lazy" alt=""></div>
+                          <p>On the Resident membership plan you&#x27;re actually employed by Nomad Nation. The monthly fee covers bookkeeping, tax accounting, your payroll, as well as your Nomad Nation membership. A professional doing all this for you is required in Bulgaria.</p>
+                        </div>
+                        <div class="help_image"></div>
+                      </div>
+                    </div>
+                    <div class="plan_text">No setup fee</div>
+                    <div class="plan_text">+ 750€ blue card (optional)</div>
+                  </div>
+                  <div class="plan_section plan_section-last">
+                    <a href="../bulgaria/contact.html" class="button-outline w-button">Talk to us</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="w-col w-col-3 w-col-medium-3 w-col-small-small-stack">
+        <div class="w-col w-col-6">
           <div class="plan">
-            <div id="plan-resident" class="plan_body">
-              <div class="plan_head">
-                <h2>Resident</h2>
-              </div>
-              <div class="plan_section plan_section-medium">
-                <div class="plan_type"><strong>Autonomous Employment</strong></div>
-                <div class="plan_text">The easiest way to do business with residency option for non-EU citizens.</div>
-                <a href="../bulgaria/plans/resident.html">Learn more …</a>
-              </div>
-              <div class="plan_section plan_section-large">
-                <div class="plan_type"><strong>Pros</strong></div>
-                <ul role="list" class="w-list-unstyled">
-                  <li class="procon_pro">No company registration required</li>
-                  <li class="procon_pro">Business bank account</li>
-                  <li class="procon_pro">Incl. VAT number</li>
-                  <li class="procon_pro">Tax handled for you</li>
-                  <li class="procon_pro">Residency for non-EU citizens</li>
-                </ul>
-              </div>
-              <div class="plan_section plan_section-medium">
-                <div class="plan_type"><strong>Cons</strong></div>
-                <ul role="list" class="w-list-unstyled">
-                  <li class="procon_con">Limited expenses</li>
-                  <li class="procon_con">Limited assets</li>
-                </ul>
-              </div>
-              <div class="plan_section">
-                <div class="plan_text"><strong>Setup Time</strong></div>
-                <div class="plan_text">3 Days</div>
-              </div>
-              <div class="plan_section">
-                <div class="plan_text"><strong>Maintenance effort</strong></div>
-                <div class="plan_text">None</div>
-              </div>
-              <div class="plan_section">
-                <div class="plan_text"><strong>Minimum term</strong></div>
-                <div class="plan_text">Three months</div>
-              </div>
-              <div class="plan_section plan_section-small">
-                <div class="price">
-                  <div class="plan_price">99€ <span class="plan_unit">/ month</span></div>
-                  <div class="help">
-                    <div class="help_content">
-                      <div class="help_close"><img src="../images/close.svg" loading="lazy" alt=""></div>
-                      <p>On the Resident membership plan you&#x27;re actually employed by Nomad Nation. The monthly fee covers bookkeeping, tax accounting, your payroll, as well as your Nomad Nation membership. A professional doing all this for you is required in Bulgaria.</p>
-                    </div>
-                    <div class="help_image"></div>
-                  </div>
-                </div>
-                <div class="plan_text">No setup fee</div>
-              </div>
-              <div class="plan_section plan_section-last">
-                <a href="../bulgaria/contact.html" class="button w-button">Get started</a>
-              </div>
+            <div class="plan_category">
+              <div><strong>Serviced plans</strong></div>
             </div>
-          </div>
-        </div>
-        <div class="w-col w-col-6 w-col-medium-6 w-col-small-small-stack">
-          <div class="plan">
             <div class="w-row">
               <div class="w-col w-col-6">
                 <div id="plan-expat-free" class="plan_body">
                   <div class="plan_head">
-                    <h2>Expat (Freelancer)</h2>
+                    <h2>Freelancer</h2>
                   </div>
                   <div class="plan_section plan_section-medium">
                     <div class="plan_type"><strong>Self Employment</strong></div>
                     <div class="plan_text">Register as a freelancer and benefit from 25% flat tax deduction.</div>
                     <a href="../bulgaria/plans/expat-free.html">Learn more …</a>
                   </div>
+                  <div class="plan_section">
+                    <div class="plan_type"><strong>Includes</strong></div>
+                    <ul role="list" class="w-list-unstyled">
+                      <li class="procon_incl">Residency registration support</li>
+                      <li class="procon_incl">Accounting and Payroll fees</li>
+                      <li class="procon_incl">VAT number</li>
+                    </ul>
+                  </div>
                   <div class="plan_section plan_section-large">
                     <div class="plan_type"><strong>Pros</strong></div>
                     <ul role="list" class="w-list-unstyled">
                       <li class="procon_pro">25% flat tax benefit</li>
-                      <li class="procon_pro">Incl. VAT number</li>
                       <li class="procon_pro">Fully independent</li>
                       <li class="procon_pro">No need to file expenses</li>
                     </ul>
@@ -497,27 +525,33 @@
                     <div class="plan_text">+ 150€ year end fee</div>
                   </div>
                   <div class="plan_section plan_section-last">
-                    <a href="../bulgaria/contact.html" class="button w-button">Get started</a>
+                    <a href="../bulgaria/contact.html" class="button-outline w-button">Talk to us</a>
                   </div>
                 </div>
               </div>
               <div class="w-col w-col-6">
                 <div id="plan-expat-llc" class="plan_body">
                   <div class="plan_head">
-                    <h2>Expat (EOOD)</h2>
+                    <h2>Company</h2>
                   </div>
                   <div class="plan_section plan_section-medium">
                     <div class="plan_type"><strong>Limited Liability Company</strong></div>
                     <div class="plan_text">Fully independent business with all options and membership benefits.</div>
                     <a href="../bulgaria/plans/expat-eood.html">Learn more …</a>
                   </div>
+                  <div class="plan_section">
+                    <div class="plan_type"><strong>Includes</strong></div>
+                    <ul role="list" class="w-list-unstyled">
+                      <li class="procon_incl">Residency registration support</li>
+                      <li class="procon_incl">Accounting and Payroll fees</li>
+                      <li class="procon_incl">VAT number</li>
+                    </ul>
+                  </div>
                   <div class="plan_section plan_section-large">
                     <div class="plan_type"><strong>Pros</strong></div>
                     <ul role="list" class="w-list-unstyled">
                       <li class="procon_pro">Flexible expenses and assets</li>
-                      <li class="procon_pro">Incl. VAT number</li>
                       <li class="procon_pro">Limited Liability</li>
-                      <li class="procon_pro">Group discounts</li>
                     </ul>
                   </div>
                   <div class="plan_section plan_section-medium">
@@ -555,7 +589,7 @@
                     <div class="plan_text">+ 250€ year end fee</div>
                   </div>
                   <div class="plan_section plan_section-last">
-                    <a href="../bulgaria/contact.html" class="button w-button">Get started</a>
+                    <a href="../bulgaria/contact.html" class="button-outline w-button">Talk to us</a>
                   </div>
                 </div>
               </div>

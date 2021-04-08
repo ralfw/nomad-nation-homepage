@@ -246,7 +246,10 @@ a.w--current {
 .button {
   margin-bottom: 20px;
   padding: 10px 25px;
-  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff4e00;
+  border-radius: 25px;
   background-color: #ff4e00;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
@@ -351,8 +354,8 @@ a.w--current {
 }
 
 .plan_head {
-  min-height: 90px;
-  padding: 10px 15px;
+  min-height: 40px;
+  padding: 0px 15px;
   border-bottom: 3px solid rgba(0, 0, 0, 0.05);
   border-radius: 0px;
 }
@@ -363,13 +366,13 @@ a.w--current {
 }
 
 .plan_section.plan_section-last {
-  min-height: 90px;
+  min-height: 80px;
   border-bottom-style: none;
   text-align: center;
 }
 
 .plan_section.plan_section-large {
-  min-height: 265px;
+  min-height: 203px;
   padding-bottom: 10px;
 }
 
@@ -395,9 +398,9 @@ a.w--current {
   padding-top: 0px;
   padding-bottom: 10px;
   padding-left: 30px;
-  background-image: url('../images/pro.svg');
+  background-image: url('../images/pro_1.svg');
   background-position: 0px 0px;
-  background-size: auto;
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-clip: border-box;
 }
@@ -406,9 +409,9 @@ a.w--current {
   padding-top: 0px;
   padding-bottom: 10px;
   padding-left: 30px;
-  background-image: url('../images/con.svg');
+  background-image: url('../images/con_1.svg');
   background-position: 0px 0px;
-  background-size: auto;
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-clip: border-box;
 }
@@ -879,8 +882,8 @@ a.w--current {
 }
 
 .wizardimage {
-  margin-top: 90px;
-  margin-bottom: -200px;
+  margin-top: 40px;
+  margin-bottom: -50px;
   text-align: center;
 }
 
@@ -1530,7 +1533,7 @@ a.w--current {
 }
 
 .navdropdown_toggle {
-  margin-top: -20px;
+  margin-top: -23px;
   padding-top: 20px;
   padding-bottom: 20px;
   -webkit-transition: all 200ms ease;
@@ -1908,6 +1911,101 @@ a.w--current {
 .residencytabs_tab-4.w--current:focus {
   background-image: url('../images/step-4-active.svg'), -webkit-gradient(linear, left top, left bottom, from(null), to(null));
   background-image: url('../images/step-4-active.svg'), linear-gradient(180deg, null, null);
+}
+
+.servicetabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.servicetab_menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.servicetabs_tab {
+  min-width: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  background-color: transparent;
+  font-family: futura-pt, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.servicetabs_tab.w--current {
+  background-color: transparent;
+}
+
+.section-assistance {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.section-assistance.hide {
+  display: none;
+}
+
+.procon_incl {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  background-image: url('../images/pro.svg');
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+
+.button-outline {
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff4e00;
+  border-radius: 25px;
+  background-color: transparent;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-family: futura-pt, sans-serif;
+  color: #ff4e00;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.button-outline:hover {
+  background-color: #ff4e00;
+  box-shadow: 0 0 0 2px #f04900;
+  color: #fff;
+}
+
+.button-outline.button-menu {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.plan_category {
+  margin-left: 0px;
+  padding-top: 18px;
+  padding-left: 18px;
+  color: rgba(51, 51, 51, 0.3);
+  text-align: left;
+}
+
+.section-planwizard {
+  margin-top: 60px;
+  padding-top: 100px;
+  padding-bottom: 0px;
 }
 
 @media screen and (max-width: 991px) {
@@ -2343,6 +2441,10 @@ a.w--current {
     padding-top: 10px;
     background-color: #fff;
     box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .section-planwizard {
+    margin-top: auto;
   }
 }
 
