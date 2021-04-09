@@ -1,14 +1,14 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Fri Apr 09 2021 18:47:47 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="60424e1d2270db126f71da2e" data-wf-site="60424e1d2270db32af71da2d">
+<html data-wf-page="607099f1f5a5cf4f4dd5cb9c" data-wf-site="60424e1d2270db32af71da2d">
 <head>
   <meta charset="utf-8">
-  <title>Nomad Nation – A virtual nation without borders.</title>
+  <title>Blog (Template)</title>
   <meta content="Nomad Nation is a global platform to enable you to collaborate, do business and live wherever you like." name="description">
-  <meta content="Nomad Nation – A virtual nation without borders." property="og:title">
+  <meta content="Blog (Template)" property="og:title">
   <meta content="Nomad Nation is a global platform to enable you to collaborate, do business and live wherever you like." property="og:description">
   <meta content="https://nomadnation.org/images/preview.png" property="og:image">
-  <meta content="Nomad Nation – A virtual nation without borders." property="twitter:title">
+  <meta content="Blog (Template)" property="twitter:title">
   <meta content="Nomad Nation is a global platform to enable you to collaborate, do business and live wherever you like." property="twitter:description">
   <meta content="https://nomadnation.org/images/preview.png" property="twitter:image">
   <meta property="og:type" content="website">
@@ -28,51 +28,59 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body>
-  <div class="section-home">
-    <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-6">
-          <div class="logo-large"><img src="images/NN-Logo-cropped.svg" loading="lazy" alt=""></div>
-          <p class="subtitle">Nomad Nation is a global platform to enable you to live and do business wherever you like.</p>
+  <div class="section-bloghead">
+    <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
+      <div class="w-container">
+        <a href="index.html" class="logo w-nav-brand"><img src="images/NN-Logo-cropped.svg" loading="lazy" alt=""></a>
+        <div class="blogsubtitle">
+          <h1 class="blogsubtitle_text">Blog</h1>
         </div>
-        <div class="w-col w-col-6"></div>
+        <div class="menu-button w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+        <nav role="navigation" class="navmenu w-nav-menu">
+          <a href="bulgaria/start.html" class="navlink w-nav-link">Home</a>
+          <a href="bulgaria/pricing.html" class="navlink w-nav-link">Pricing</a>
+        </nav>
       </div>
     </div>
   </div>
-  <div class="section-embassies">
+  <div class="section-blogcontent">
     <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-4">
-          <p class="paragraph">We currently have Embassies in:</p>
-          <a href="bulgaria/start.html" class="embassy w-inline-block">
-            <div class="embassy_country">Bulgaria</div>
-          </a>
-        </div>
-        <div class="w-col w-col-4">
-          <p class="paragraph">Coming soon:</p>
-          <div class="embassy embassy-germany">
-            <div class="embassy_country">Germany</div>
-          </div>
-        </div>
-        <div class="w-col w-col-4">
-          <div class="embassy embassy-thailand mt-50">
-            <div class="embassy_country">Thailand</div>
-          </div>
-        </div>
+      <div class="w-richtext">
+        <h2>What’s a Rich Text element?</h2>
+        <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.</p>
+        <h4>Static and dynamic content editing</h4>
+        <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
+        <h4>How to customize formatting for each rich text</h4>
+        <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the &quot;When inside of&quot; nested selector system.</p>
       </div>
     </div>
   </div>
-  <div class="section-cta">
-    <p class="paragraph">Become part of a global community and start a local embassy in your country.</p>
+  <div class="section-bloglist">
     <div class="w-container">
-      <a href="bulgaria/contact.html" class="button w-button">Start a local Embassy</a>
+      <div class="bloglist_meta">
+        <div class="bloglist_avatar"></div>
+        <div class="bloglist_author">
+          <div>Ralf Westphal</div>
+        </div>
+        <div class="bloglist_date">
+          <div>wrote on March 2021</div>
+        </div>
+      </div>
+      <div class="bloglist">
+        <div class="section-bloglistitem">
+          <h2 class="bloglist_title">Heading</h2>
+          <p class="bloglist_teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="section-footer">
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-4">
-          <a href="index.html" aria-current="page" class="logo-footer w-nav-brand w--current"><img src="images/NN-Logo-cropped.svg" loading="lazy" alt=""></a>
+          <a href="index.html" class="logo-footer w-nav-brand"><img src="images/NN-Logo-cropped.svg" loading="lazy" alt=""></a>
           <p>Nomad Nation OOD<br>30-32, Gen. E.I. Totleben Blvd., fl 2<br>1606 Sofia<br>Bulgaria</p>
         </div>
         <div class="footerlinkcol w-col w-col-4">

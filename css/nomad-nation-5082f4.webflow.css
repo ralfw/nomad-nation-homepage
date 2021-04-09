@@ -2008,6 +2008,85 @@ a.w--current {
   padding-bottom: 0px;
 }
 
+.section-blogcontent {
+  padding-bottom: 60px;
+}
+
+.section-bloghead {
+  padding-top: 0px;
+  padding-bottom: 80px;
+  background-image: url('../images/bg-top.svg');
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navdropdown_toggleblog {
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-family: futura-pt, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navdropdown_toggleblog:hover {
+  color: #ff4e00;
+}
+
+.blogsubtitle {
+  display: inline-block;
+  margin-left: 20px;
+  color: #ff4e00;
+}
+
+.blogsubtitle_text {
+  margin-top: 10px;
+  font-size: 34px;
+}
+
+.section-bloglist {
+  padding-bottom: 60px;
+}
+
+.bloglist_title {
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+.bloglist_teaser {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.bloglist_meta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.bloglist_avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 200px;
+  background-image: url('../images/ralf.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bloglist_author {
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 991px) {
   .plan_section.plan_section-large {
     min-height: 362px;
@@ -2445,6 +2524,16 @@ a.w--current {
 
   .section-planwizard {
     margin-top: auto;
+  }
+
+  .section-bloghead {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .navdropdown_toggleblog {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
