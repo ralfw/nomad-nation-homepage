@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% include bloghead.html %}
+
+<div class="section-blogcontent">
+  <div class="w-container">
+
+  	<div class="bloglist_meta">
+      <div class="bloglist_avatar"></div>
+      <div class="bloglist_author">
+        <div>{{ page.author }}</div>
+      </div>
+      <div class="bloglist_date">
+        <div>wrote on {{ page.date }}</div>
+      </div>
+    </div>
+    <h2 class="bloglist_title">{{ page.title }}</h2>
+
+    <div class="w-richtext">
+    		
+    	{{ content }}
+
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
