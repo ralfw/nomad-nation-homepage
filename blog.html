@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% include bloghead.html %}
+
+<div class="section-bloglist">
+    <div class="w-container">
+      <div class="bloglist">
+
+        {% for post in site.posts %}
+
+        <div class="bloglistitem">
+          <div class="bloglist_meta">
+            <div class="bloglist_avatar"></div>
+            <div class="bloglist_author">
+              <div>{{ post.author }}</div>
+            </div>
+            <div class="bloglist_date">
+              <div>wrote on {{ post.date }}</div>
+            </div>
+          </div>
+          <a href="{{ post.url }}"><h2 class="bloglist_title">{{ post.title }}</h2></a>
+          <p class="bloglist_teaser">{{ post.excerpt }}</p>
+        </div>
+
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+
+{% include footer.html %}
