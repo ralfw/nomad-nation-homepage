@@ -12,16 +12,17 @@ layout: default
 
         <div class="bloglistitem">
           <div class="bloglist_meta">
-            <div class="bloglist_avatar"></div>
+            <div class="bloglist_avatar" style="background-image: url(/images/{{ post.avatar }}.jpg);"></div>
             <div class="bloglist_author">
               <div>{{ post.author }}</div>
             </div>
             <div class="bloglist_date">
-              <div>wrote on {{ post.date }}</div>
+              <div>wrote on {{ post.date | date_to_long_string }}</div>
             </div>
           </div>
           <a href="{{ post.url }}"><h2 class="bloglist_title">{{ post.title }}</h2></a>
           <p class="bloglist_teaser">{{ post.excerpt }}</p>
+          <a href="{{ post.url }}" class="link link-largefutura"><span class="linkarrow">Continue reading</span> →</a>
         </div>
 
         {% endfor %}

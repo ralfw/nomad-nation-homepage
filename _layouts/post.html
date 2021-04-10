@@ -8,12 +8,12 @@ layout: default
   <div class="w-container">
 
   	<div class="bloglist_meta">
-      <div class="bloglist_avatar"></div>
+      <div class="bloglist_avatar" style="background-image: url(/images/{{ page.avatar }}.jpg);"></div>
       <div class="bloglist_author">
         <div>{{ page.author }}</div>
       </div>
       <div class="bloglist_date">
-        <div>wrote on {{ page.date }}</div>
+        <div>wrote on {{ page.date | date_to_long_string }}</div>
       </div>
     </div>
     <h2 class="bloglist_title">{{ page.title }}</h2>
