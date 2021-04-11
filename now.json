@@ -3,6 +3,10 @@
   	{ 
   	  "source": "/bulgaria", 
   	  "destination": "/bulgaria/start.html" 
+  	},
+	{ 
+  	  "source": "/blog", 
+  	  "destination": "/blog.html" 
   	}
   ]
 }
