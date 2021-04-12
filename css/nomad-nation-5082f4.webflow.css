@@ -187,6 +187,10 @@ a.w--current {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 300px;
   margin-top: 10px;
 }
@@ -273,6 +277,10 @@ a.w--current {
 .button.button-menu {
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.button.button-menu.w--current {
+  color: #fff;
 }
 
 .heading {
@@ -774,7 +782,7 @@ a.w--current {
   background-repeat: no-repeat;
 }
 
-.logo-footer {
+.logo-footer_link {
   margin-top: 0px;
   margin-bottom: 20px;
   padding-right: 40px;
@@ -2128,13 +2136,24 @@ a.w--current {
 
 .navmenulink {
   display: block;
-  margin-top: 28px;
+  margin-top: 38px;
   font-family: futura-pt, sans-serif;
   font-size: 21px;
 }
 
 .blogsubtitle {
   width: 310px;
+}
+
+.bloghead {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 991px) {
@@ -2228,6 +2247,16 @@ a.w--current {
 
   .link-copy.link-large {
     font-size: 18px;
+  }
+
+  .section-footer {
+    padding-top: 140px;
+  }
+
+  .logo-footer_link {
+    display: block;
+    width: 330px;
+    padding-left: 0px;
   }
 
   .section-wizard {
@@ -2345,6 +2374,23 @@ a.w--current {
   .residencytabs_tab-4 {
     margin-bottom: 10px;
   }
+
+  .section-blogcontent {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .section-bloghead {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .logo-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2353,7 +2399,8 @@ a.w--current {
   }
 
   .logo {
-    width: 240px;
+    width: 200px;
+    padding-left: 0px;
   }
 
   .navlink {
@@ -2373,6 +2420,10 @@ a.w--current {
 
   .subtitle {
     margin-bottom: 20px;
+  }
+
+  .subtitle.subtitle-blog {
+    margin-top: 0px;
   }
 
   .section-chapter {
@@ -2433,11 +2484,11 @@ a.w--current {
     padding-bottom: 50px;
   }
 
-  .logo-footer {
+  .logo-footer_link {
     padding-left: 0px;
   }
 
-  .logo-footer.w--current {
+  .logo-footer_link.w--current {
     padding-left: 0px;
   }
 
@@ -2519,6 +2570,11 @@ a.w--current {
     width: auto;
   }
 
+  .residentimage {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
   .footerlinkcol {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -2577,13 +2633,39 @@ a.w--current {
   }
 
   .section-bloghead {
-    padding-top: 40px;
+    padding-top: 0px;
     padding-bottom: 80px;
   }
 
   .navdropdown_toggleblog {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .blogtitle {
+    margin-left: 10px;
+  }
+
+  .blogsubtitle_text {
+    font-size: 24px;
+  }
+
+  .section-bloglist {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .navmenulink {
+    margin-top: 0px;
+    font-size: 18px;
+  }
+
+  .bloghead {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
