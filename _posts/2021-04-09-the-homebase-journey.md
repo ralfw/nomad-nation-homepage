@@ -1,10 +1,8 @@
 ---
-
 layout: post
 image: /blog-images/2021-04-09-homebase-journey.jpg
 author: Ralf Westphal
 avatar: ralf
-
 ---
 
 # The Homebase Journey
