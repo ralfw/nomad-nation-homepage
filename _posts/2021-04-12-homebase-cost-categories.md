@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Homebase Cost Categories"
 author: Ralf Westphal
 avatar: ralf
 ---
