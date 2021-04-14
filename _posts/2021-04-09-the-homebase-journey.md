@@ -6,8 +6,6 @@ author: Ralf Westphal
 avatar: ralf
 ---
 
-# The Homebase Journey
-
 Scouting, boarding, cruising - that's the three phases of a homebase journey as we understand it at Nomad Nation.
 
 ## Phase 1: Scouting

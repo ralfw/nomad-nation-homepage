@@ -5,8 +5,6 @@ author: Ralf Westphal
 avatar: ralf
 ---
 
-# Homebase Cost Categories
-
 What does a homebase costs? At Nomad Nation we distinguish between:
 
 - **Setup** costs or 1-time costs

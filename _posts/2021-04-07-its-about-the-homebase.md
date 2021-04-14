@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "It's about the Homebase"
-image: ../blog-images/2021-04-07-homebase.jpg
+image: /blog-images/2021-04-07-homebase.jpg
 author: Ralf Westphal
 avatar: ralf
 ---

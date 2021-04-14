@@ -9,18 +9,22 @@ layout: default
 
   	<div class="bloglist_meta">
       <div class="bloglist_avatar" style="background-image: url(/images/{{ page.avatar }}.jpg);"></div>
-      <div class="bloglist_author">
-        <div>{{ page.author }}</div>
-      </div>
-      <div class="bloglist_date">
-        <div>wrote on {{ page.date | date_to_long_string }}</div>
-      </div>
+
+
     </div>
     <h1 class="bloglist_title">{{ page.title }}</h1>
+    <img src="{{page.image}}"/>
     <div class="w-richtext">
     		
     	{{ content }}
 
+    </div>
+
+    <div class="bloglist_author">
+        <div>{{ page.author }}</div>
+    </div>
+    <div class="bloglist_date">
+      <div>, {{ page.date | date_to_long_string }}</div>
     </div>
   </div>
 </div>
