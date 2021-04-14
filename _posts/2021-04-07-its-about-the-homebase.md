@@ -6,8 +6,6 @@ author: Ralf Westphal
 avatar: ralf
 ---
 
-# It's about the Homebase
-
 What's Nomad Nation about? We're thinking about that constantly. Hey, we're a start-up always on the lookout for the next opportunity to pivot ![😃](https://static.xx.fbcdn.net/images/emoji.php/v9/taa/1.5/16/1f603.png)
 
 Ok, more seriously: No, we're not looking for a pivot, but we're aware it can always happen. It can happen because new data comes to light or because we refine our understanding of our own motivation. This is a co-evolution between us, the company, and the market.
