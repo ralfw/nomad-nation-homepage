@@ -115,7 +115,7 @@ a.w--current {
 }
 
 .section-hero {
-  margin-bottom: -100px;
+  margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 150px;
   background-image: url('../images/bg-top.svg');
@@ -2134,6 +2134,10 @@ a.w--current {
 
 .venture_info {
   height: 198px;
+}
+
+.brand-13 {
+  width: 350px;
 }
 
 @media screen and (max-width: 991px) {
