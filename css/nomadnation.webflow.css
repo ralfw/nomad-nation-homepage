@@ -1,129 +1,14 @@
-.w-form-formradioinput--inputType-custom {
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-color: #ccc;
-  border-bottom-color: #ccc;
-  border-left-color: #ccc;
-  border-right-color: #ccc;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-right-style: solid;
-  width: 12px;
-  height: 12px;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-}
-
-.w-form-formradioinput--inputType-custom.w--redirected-focus {
-  box-shadow: 0px 0px 3px 1px #3898ec;
-}
-
-.w-form-formradioinput--inputType-custom.w--redirected-checked {
-  border-top-width: 4px;
-  border-bottom-width: 4px;
-  border-left-width: 4px;
-  border-right-width: 4px;
-  border-top-color: #3898ec;
-  border-bottom-color: #3898ec;
-  border-left-color: #3898ec;
-  border-right-color: #3898ec;
-}
-
-.w-checkbox {
-  display: block;
-  margin-bottom: 5px;
-  padding-left: 20px;
-}
-
-.w-checkbox::before {
-  content: ' ';
-  display: table;
-  -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-}
-
-.w-checkbox::after {
-  content: ' ';
-  display: table;
-  -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-  clear: both;
-}
-
-.w-checkbox-input {
-  float: left;
-  margin-bottom: 0px;
-  margin-left: -20px;
-  margin-right: 0px;
-  margin-top: 4px;
-  line-height: normal;
-}
-
-.w-checkbox-input--inputType-custom {
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-color: #ccc;
-  border-bottom-color: #ccc;
-  border-left-color: #ccc;
-  border-right-color: #ccc;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-right-style: solid;
-  width: 12px;
-  height: 12px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-checked {
-  background-color: #3898ec;
-  border-top-color: #3898ec;
-  border-bottom-color: #3898ec;
-  border-left-color: #3898ec;
-  border-right-color: #3898ec;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-focus {
-  box-shadow: 0px 0px 3px 1px #3898ec;
-}
-
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: Inter, sans-serif;
   color: #333;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
 }
 
 h1 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 38px;
   line-height: 44px;
   font-weight: 600;
@@ -132,9 +17,9 @@ h1 {
 h2 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   color: #009192;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
   font-weight: 600;
 }
@@ -142,7 +27,7 @@ h2 {
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   color: #444;
   font-size: 21px;
   line-height: 30px;
@@ -159,7 +44,7 @@ h4 {
 
 p {
   margin-bottom: 10px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: Inter, sans-serif;
   color: #444;
   font-size: 15px;
   line-height: 24px;
@@ -179,13 +64,6 @@ a.w--current {
   color: #ff4e00;
 }
 
-ul {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px;
-  line-height: 24px;
-}
-
 .navbar {
   margin-bottom: 20px;
   padding-top: 20px;
@@ -198,7 +76,7 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
+  width: 450px;
   margin-top: 10px;
 }
 
@@ -206,7 +84,7 @@ ul {
   margin-top: 10px;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
@@ -220,9 +98,9 @@ ul {
 }
 
 .title-orange {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   color: #ff4e00;
-  font-size: 36px;
+  font-size: 38px;
   line-height: 42px;
   font-weight: 600;
 }
@@ -237,9 +115,9 @@ ul {
 }
 
 .section-hero {
-  margin-bottom: -100px;
+  margin-bottom: 0px;
   padding-top: 0px;
-  padding-bottom: 180px;
+  padding-bottom: 150px;
   background-image: url('../images/bg-top.svg');
   background-position: 50% 100%;
   background-size: cover;
@@ -248,9 +126,9 @@ ul {
 
 .subtitle {
   margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 18px;
+  margin-bottom: 40px;
+  font-family: futura-pt, sans-serif;
+  font-size: 21px;
   line-height: 28px;
 }
 
@@ -261,7 +139,6 @@ ul {
 }
 
 .button {
-  margin-bottom: 20px;
   padding: 10px 25px;
   border-style: solid;
   border-width: 2px;
@@ -270,7 +147,7 @@ ul {
   background-color: #ff4e00;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
@@ -278,10 +155,6 @@ ul {
 .button:hover {
   background-color: #ff4e00;
   box-shadow: 0 0 0 2px #f04900;
-  color: #fff;
-}
-
-.button.w--current {
   color: #fff;
 }
 
@@ -294,12 +167,6 @@ ul {
   color: #fff;
 }
 
-.button.button-xl {
-  padding: 15px 35px;
-  border-radius: 50px;
-  font-size: 24px;
-}
-
 .heading {
   font-size: 28px;
 }
@@ -310,8 +177,8 @@ ul {
 }
 
 .paragraph {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 15px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -335,7 +202,7 @@ ul {
 }
 
 .title {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   color: #009192;
   font-size: 38px;
   line-height: 42px;
@@ -371,7 +238,7 @@ ul {
 
 .section-plans {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .plan {
@@ -407,22 +274,16 @@ ul {
 }
 
 .plan_section.plan_section-large {
-  min-height: 223px;
+  min-height: 203px;
   padding-bottom: 10px;
 }
 
 .plan_section.plan_section-medium {
-  min-height: 140px;
+  min-height: 135px;
 }
 
 .plan_section.plan_section-small {
   min-height: 110px;
-}
-
-.plan_section.plan_section-small.plan_section-last {
-  min-height: 125px;
-  padding-bottom: 20px;
-  text-align: left;
 }
 
 .plan_type {
@@ -460,13 +321,13 @@ ul {
 .plan_price {
   margin-top: 0px;
   margin-bottom: 5px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 24px;
   font-weight: 600;
 }
 
 .plan_unit {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -536,8 +397,8 @@ ul {
 }
 
 .link.link-largefutura {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 18px;
+  font-family: futura-pt, sans-serif;
+  font-size: 21px;
 }
 
 .link.link-mediumfutura {
@@ -546,8 +407,9 @@ ul {
 }
 
 .section-home {
-  padding-top: 70px;
-  padding-bottom: 140px;
+  margin-bottom: 0px;
+  padding-top: 40px;
+  padding-bottom: 110px;
   background-image: url('../images/bg-top.svg');
   background-position: 50% 100%;
   background-size: cover;
@@ -559,7 +421,6 @@ ul {
 }
 
 .logo-large {
-  width: 260px;
   margin-bottom: 40px;
 }
 
@@ -610,8 +471,8 @@ ul {
 }
 
 .embassy_country {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 36px;
+  font-family: futura-pt, sans-serif;
+  font-size: 48px;
   font-weight: 600;
 }
 
@@ -753,7 +614,7 @@ ul {
 
 .dropdown {
   display: block;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   color: #009192;
   font-size: 21px;
   font-weight: 600;
@@ -777,7 +638,7 @@ ul {
 }
 
 .paragraph-large {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 21px;
   line-height: 28px;
 }
@@ -808,7 +669,6 @@ ul {
 
 .logo-footer_link {
   margin-top: 0px;
-  margin-right: 40px;
   margin-bottom: 20px;
   padding-right: 40px;
 }
@@ -1018,7 +878,7 @@ ul {
 
 .section-plancompare {
   margin-top: 60px;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 0px;
 }
 
@@ -1264,7 +1124,7 @@ ul {
 }
 
 .pricelarge {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   color: #009192;
   font-size: 80px;
   line-height: 100px;
@@ -1301,9 +1161,9 @@ ul {
 .plantitle {
   margin-top: 40px;
   margin-bottom: 20px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   color: #009192;
-  font-size: 36px;
+  font-size: 38px;
   line-height: 42px;
   font-weight: 600;
 }
@@ -1455,7 +1315,7 @@ ul {
 
 .story_subtitle {
   margin-bottom: 40px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 24px;
 }
 
@@ -1487,9 +1347,9 @@ ul {
 .pagetitle {
   margin-top: 0px;
   margin-bottom: 20px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   color: #009192;
-  font-size: 36px;
+  font-size: 38px;
   line-height: 42px;
   font-weight: 600;
 }
@@ -1604,7 +1464,7 @@ ul {
   padding-bottom: 20px;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
@@ -1879,7 +1739,7 @@ ul {
   background-position: 0% 50%, 94% 50%;
   background-size: auto, 12px 12px;
   background-repeat: no-repeat, no-repeat;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
@@ -1906,7 +1766,7 @@ ul {
   background-position: 0% 50%, 94% 50%;
   background-size: auto, 12px 12px;
   background-repeat: no-repeat, no-repeat;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
@@ -1933,7 +1793,7 @@ ul {
   background-position: 0% 50%, 94% 50%;
   background-size: auto, 12px 12px;
   background-repeat: no-repeat, no-repeat;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
@@ -1972,7 +1832,6 @@ ul {
   background-position: 0% 50%;
   background-size: auto;
   background-repeat: no-repeat;
-  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .residencytabs_tab-4.w--current:focus {
@@ -2198,10 +2057,9 @@ ul {
 }
 
 .textlist {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: Inter, sans-serif;
   color: #333;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -2215,89 +2073,71 @@ ul {
   margin-bottom: 0px;
 }
 
-.heading-3 {
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.list-2 {
-  line-height: 24px;
-}
-
-.section-signup {
-  margin-top: 100px;
-  margin-bottom: -40px;
-}
-
-.signup {
-  min-height: 700px;
-}
-
-.column-ralign {
-  text-align: right;
-}
-
-.section-contacthero {
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 150px;
-  background-image: url('../images/bg-top.svg');
-  background-position: 50% 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.mb-80 {
-  margin-bottom: 80px;
-}
-
-.html-embed {
-  margin-left: -35px;
-  padding-left: 0px;
-}
-
-.benefit_item {
-  margin-bottom: 10px;
-  padding: 0px 0px 10px 30px;
-  background-image: url('../images/check-orange.svg');
-  background-position: 0px 0px;
-  background-size: 24px 23px;
-  background-repeat: no-repeat;
-  font-size: 18px;
-  background-clip: border-box;
-}
-
-.benefits {
-  margin-top: 20px;
-  padding: 10px 15px 10px 0px;
-  border-bottom: 1px none rgba(0, 0, 0, 0.1);
-}
-
-.benefits.plan_section-last {
-  min-height: 120px;
-  border-bottom-style: none;
-}
-
-.benefits.plan_section-200 {
+.venture {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   min-height: 200px;
-  padding-bottom: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
 }
 
-.benefits.plan_section-160 {
-  min-height: 160px;
+.venture:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.benefits.mb-40 {
-  margin-bottom: 20px;
+.venture.embassy-germany {
+  background-image: url('../images/country-germany.svg');
 }
 
-.section-pricinghero {
-  margin-bottom: -150px;
-  padding-top: 0px;
-  padding-bottom: 120px;
-  background-image: url('../images/bg-top.svg');
-  background-position: 50% 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+.venture.embassy-japan {
+  background-image: url('../images/country-japan.svg');
+}
+
+.venture.embassy-thailand {
+  background-image: url('../images/country-thailand.svg');
+}
+
+.venture.embassy-thailand.mt-50 {
+  margin-top: 35px;
+}
+
+.learnmore {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.venture_info {
+  height: 198px;
+}
+
+.brand-13 {
+  width: 350px;
 }
 
 @media screen and (max-width: 991px) {
@@ -2355,6 +2195,58 @@ ul {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .brand {
+    width: 410px;
+  }
+
+  .brand-2 {
+    width: 400px;
+  }
+
+  .brand-3 {
+    width: 400px;
+  }
+
+  .brand-4 {
+    width: 390px;
+  }
+
+  .brand-5 {
+    width: 380px;
+  }
+
+  .brand-6 {
+    width: 370px;
+  }
+
+  .brand-7 {
+    width: 360px;
+  }
+
+  .brand-8 {
+    width: 350px;
+  }
+
+  .brand-9 {
+    width: 350px;
+  }
+
+  .brand-10 {
+    width: 340px;
+  }
+
+  .brand-11 {
+    width: 330px;
+  }
+
+  .brand-12 {
+    width: 340px;
+  }
+
+  .brand-13 {
+    width: 350px;
   }
 }
 
@@ -2810,14 +2702,6 @@ ul {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-  }
-
-  .section-contacthero {
-    padding-bottom: 20px;
-  }
-
-  .section-pricinghero {
-    padding-bottom: 20px;
   }
 }
 
